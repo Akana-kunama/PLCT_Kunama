@@ -8,11 +8,11 @@ QEMU的源码可以直接通过github/gitlab进行获取：
 
 [qemu/qemu: Official QEMU mirror](https://github.com/qemu/qemu)
 
-![微信截图_20240627102317](pics/微信截图_20240627102317.png)
+![微信截图_20240627102317](./start_pics/微信截图_20240627102317.png)
 
 [QEMU / QEMU · GitLab](https://gitlab.com/qemu-project/qemu)
 
-![微信截图_20240627102327](pics/微信截图_20240627102327.png)
+![微信截图_20240627102327](./start_pics/微信截图_20240627102327.png)
 
 github获取-终端中输入：
 
@@ -58,7 +58,7 @@ mkdir build && cd build
 ../configure --help | less
 ```
 
-![微信截图_20240627102209](pics/微信截图_20240627102209.png)
+![微信截图_20240627102209](./start_pics/微信截图_20240627102209.png)
 
 以下为编译选项示例：
 
@@ -82,11 +82,11 @@ sudo make -j$(nproc)
 sudo make install
 ```
 
-![微信截图_20240627083744](pics/微信截图_20240627083744.png)
+![微信截图_20240627083744](./start_pics/微信截图_20240627083744.png)
 
 若缺少相关支持包，编译会产生错误：
 
-![微信截图_20240627083410](pics/微信截图_20240627083410.png)
+![微信截图_20240627083410](./start_pics/微信截图_20240627083410.png)
 
 具体信息可以在menson-log.txt 中查看：
 
@@ -106,7 +106,7 @@ qemu-system-aarch64 --version
 
 终端显示：
 
-![微信截图_20240627112356](pics/微信截图_20240627112356.png)
+![微信截图_20240627112356](./start_pics/微信截图_20240627112356.png)
 
 终端中输入：
 
@@ -116,7 +116,7 @@ qemu-aarch64 --version
 
 终端显示：
 
-![微信截图_20240627112426](pics/微信截图_20240627112426.png)
+![微信截图_20240627112426](./start_pics/微信截图_20240627112426.png)
 
 至此安装结束~
 
@@ -126,7 +126,7 @@ qemu-aarch64 --version
 
 openEuler镜像下载地址：[repo.openeuler.org/openEuler-24.03-LTS/virtual_machine_img/](https://repo.openeuler.org/openEuler-24.03-LTS/virtual_machine_img/)
 
-![微信截图_20240628103450](pics/微信截图_20240628103450.png)
+![微信截图_20240628103450](./start_pics/微信截图_20240628103450.png)
 
 #### X86架构
 
@@ -167,11 +167,11 @@ openEuler-24.03-LTS-x86_64.qcow2应更换为具体的路径；
 qemu-system-x86_64 --help | less
 ```
 
-![微信截图_20240628105032](pics/微信截图_20240628105032.png)
+![微信截图_20240628105032](./start_pics/微信截图_20240628105032.png)
 
 启动成功后进入以下界面：
 
-![微信截图_20240628104008](pics/微信截图_20240628104008.png)
+![微信截图_20240628104008](./start_pics/微信截图_20240628104008.png)
 
 默认登录用户名为：root，密码：openEuler12#$，登陆后输入：
 
@@ -179,7 +179,7 @@ qemu-system-x86_64 --help | less
 uname -a 
 ```
 
-![微信截图_20240628104408](pics/微信截图_20240628104408.png)
+![微信截图_20240628104408](./start_pics/微信截图_20240628104408.png)
 
 至此安装完成~
 
@@ -202,14 +202,7 @@ xz -d openEuler-24.03-LTS-aarch64.qcow2.xz
 启动虚拟机：
 
 ```bash
-qemu-system-aarch64 \
-  -machine virt -cpu cortex-a57 \
-  -smp 8 -m 4G \
-  -hda openEuler-24.03-LTS-aarch64.qcow2 \
-  -kernel vmlinuz \
-  -initrd initrd.img \
-  -nic user,model=e1000,hostfwd=tcp::2222-:22 \
-  -append 'root=/dev/vda2 console=ttyAMA0'
+qemu-system-aarch64 -machine virt -cpu cortex-a57 -smp 8 -m 4G -hda openEuler-24.03-LTS-aarch64.qcow2 -kernel vmlinuz -initrd initrd.img -nic user,model=e1000,hostfwd=tcp::2220-:22 -append 'root=/dev/vda2 console=ttyAMA0'
 ```
 
 openEuler-24.03-LTS-aarch64.qcow2、vmlinuz、initrd.img需要更换到对应路径
@@ -235,11 +228,11 @@ qemu-system-aarch64 --help
 
 启动后界面如下：
 
-![微信截图_20240628150016](pics/微信截图_20240628150016.png)
+![微信截图_20240628150016](./start_pics/微信截图_20240628150016.png)
 
 在打开的 qemu 的虚拟化窗口中，按下 Ctrl+Alt+2 切换到串口控制台后回车，如下图所示，并等待加载...........
 
-![微信截图_20240628160933](pics/微信截图_20240628160933.png)
+![微信截图_20240628160933](./start_pics/微信截图_20240628160933.png)
 
 默认登录用户名为：root，密码：openEuler12#$，登陆后输入：
 
@@ -247,7 +240,7 @@ qemu-system-aarch64 --help
 uname -a 
 ```
 
-![image-20240628224017809](C:/Users/HC/AppData/Roaming/Typora/typora-user-images/image-20240628224017809.png)
+![QQ20240702-181944](./start_pics/QQ20240702-181944.png)
 
 至此安装完成~
 
@@ -285,7 +278,7 @@ bash start_vm.sh
 
 输入后等待初始化后进入初始化界面，输入默认用户名和密码：
 
-![微信截图_20240628233255](pics/微信截图_20240628233255.png)
+![微信截图_20240628233255](./start_pics/微信截图_20240628233255.png)
 
 至此安装完成啦
 
@@ -300,21 +293,12 @@ bash start_vm.sh
 启动虚拟机：
 
 ```bash
-qemu-system-x86_64 \
-  -name openEulerVM-x86_64 \
-  -m 8G \
-  -smp 4,sockets=2,cores=2,threads=1 \
-  -cpu host \
-  -drive file=openEuler-24.03-LTS-x86_64.qcow2,id=hd0,format=qcow2 \	
-  -device e1000,netdev=net0 \
-  -netdev user,id=net0,hostfwd=tcp::2222-:22 \
-  -enable-kvm \
-  -nographic	
+qemu-system-x86_64 -name openEulerVM-x86_64 -m 8G -smp 4,sockets=2,cores=2,threads=1 -cpu host -drive file=openEuler-24.03-LTS-x86_64.qcow2,id=hd0,format=qcow2 -device e1000,netdev=net0 -netdev user,id=net0,hostfwd=tcp::2222-:22 -enable-kvm -nographic	
 ```
 
 输入默认的用户名和密码进行登录：
 
-![微信截图_20240629164002](pics/微信截图_20240629164002.png)
+![微信截图_20240629164002](./start_pics/微信截图_20240629164002.png)
 
 修改 `/etc/yum.repos.d/openEulerROS.repo` 文件为以下内容：
 
@@ -340,7 +324,7 @@ sudo dnf install "ros-humble-*" --exclude=ros-humble-admittance-controller --exc
 
 等待安装完成：
 
-![微信截图_20240629165117](pics/微信截图_20240629165117.png)
+![微信截图_20240629165117](./start_pics/微信截图_20240629165117.png)
 
 安装结束后需要进行环境配置，以便使用ROS2的命令：
 
@@ -359,28 +343,10 @@ sudo dnf install "ros-humble-*" --exclude=ros-humble-admittance-controller --exc
 
   可以看到返回信息：
 
-  ![微信截图_20240629165756](pics/微信截图_20240629165756.png)
+  ![微信截图_20240629165756](./start_pics/微信截图_20240629165756.png)
 
 
-安装结束后，对ROS2 Humble进行用例测试：
-
-- turtlesim（需要安装图像化桌面）:
-
-  在桌面启动两个终端（交互需求），在两个终端中分别输入：
-
-  ```bash
-  ros2 run turtlesim turtlesim_node
-  ```
-
-  以及：
-
-  ```bash
-  ros2 run turtlesim turtle_teleop_key
-  ```
-
-  在输入`ros2 run turtlesim turtle_teleop_key`的窗口下，根据提示，通过按键控制乌龟的移动即可：
-
-  ![QQ20240701-165712](/home/kunama/Desktop/PLCT/pics/QQ20240701-165712.png)
+安装结束后
 
 #### ARM架构
 
