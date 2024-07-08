@@ -1,0 +1,3 @@
+[console_scripts]
+image_show_python_test = test05_package.image_show_python_test:main
+
