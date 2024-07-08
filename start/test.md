@@ -186,4 +186,8 @@ ros2 run turtlesim turtle_teleop_key
 
   ![QQ20240702-170522](./test_pic/QQ20240702-170522.png)
 
-- 
+
+
+## 参考
+
+https://gitee.com/yunxiangluo/open-euler-risc-v-ros2-humble/blob/master/QEMU/README.md#3-ros2-topic-%E5%B7%A5%E5%85%B7
