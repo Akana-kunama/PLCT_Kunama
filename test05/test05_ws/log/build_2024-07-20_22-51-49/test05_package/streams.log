@@ -1,0 +1,24 @@
+[0.549s] Invoking command in '/home/kunama/Desktop/PLCT/test05/test05_ws/src/test05_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kunama/Desktop/PLCT/test05/test05_ws/install/test05_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/test05_package build --build-base /home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/build install --record /home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/install.log --single-version-externally-managed install_data
+[0.765s] running egg_info
+[0.765s] writing ../../build/test05_package/test05_package.egg-info/PKG-INFO
+[0.766s] writing dependency_links to ../../build/test05_package/test05_package.egg-info/dependency_links.txt
+[0.766s] writing entry points to ../../build/test05_package/test05_package.egg-info/entry_points.txt
+[0.766s] writing requirements to ../../build/test05_package/test05_package.egg-info/requires.txt
+[0.766s] writing top-level names to ../../build/test05_package/test05_package.egg-info/top_level.txt
+[0.767s] reading manifest file '../../build/test05_package/test05_package.egg-info/SOURCES.txt'
+[0.768s] writing manifest file '../../build/test05_package/test05_package.egg-info/SOURCES.txt'
+[0.768s] running build
+[0.768s] running build_py
+[0.768s] copying test05_package/image_show_python_test.py -> /home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/build/lib/test05_package
+[0.769s] running install
+[0.769s] running install_lib
+[0.769s] copying /home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/build/lib/test05_package/image_show_python_test.py -> /home/kunama/Desktop/PLCT/test05/test05_ws/install/test05_package/lib/python3.10/site-packages/test05_package
+[0.769s] byte-compiling /home/kunama/Desktop/PLCT/test05/test05_ws/install/test05_package/lib/python3.10/site-packages/test05_package/image_show_python_test.py to image_show_python_test.cpython-310.pyc
+[0.770s] running install_data
+[0.770s] running install_egg_info
+[0.772s] removing '/home/kunama/Desktop/PLCT/test05/test05_ws/install/test05_package/lib/python3.10/site-packages/test05_package-0.0.0-py3.10.egg-info' (and everything under it)
+[0.772s] Copying ../../build/test05_package/test05_package.egg-info to /home/kunama/Desktop/PLCT/test05/test05_ws/install/test05_package/lib/python3.10/site-packages/test05_package-0.0.0-py3.10.egg-info
+[0.773s] running install_scripts
+[0.790s] Installing image_show_python_test script to /home/kunama/Desktop/PLCT/test05/test05_ws/install/test05_package/lib/test05_package
+[0.790s] writing list of installed files to '/home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/install.log'
+[0.815s] Invoked command in '/home/kunama/Desktop/PLCT/test05/test05_ws/src/test05_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kunama/Desktop/PLCT/test05/test05_ws/install/test05_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/test05_package build --build-base /home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/build install --record /home/kunama/Desktop/PLCT/test05/test05_ws/build/test05_package/install.log --single-version-externally-managed install_data

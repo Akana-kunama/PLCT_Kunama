@@ -15,18 +15,20 @@ class ImageProcessor(Node):
 
         self.subscription = self.create_subscription(
             Image,
-            '/usb_cam/image_raw',
+            '/image_raw',
             self.listener_callback,
             10)
         self.publisher = self.create_publisher(Image, '/processed_image', 10)
         self.bridge = CvBridge()
 
     def listener_callback(self, data):
+        self.get_logger().info('Processing image data...')
         try:
             # Convert ROS Image message to OpenCV image
             cv_image = self.bridge.imgmsg_to_cv2(data, desired_encoding='bgr8')
+            self.get_logger().info('Image processed successfully')
         except CvBridgeError as e:
-            self.get_logger().error(f"Error converting image: {str(e)}")
+            self.get_logger().info(f"Error converting image: {str(e)}")
             return
 
         # Retrieve parameters for rectangle dimensions and position
