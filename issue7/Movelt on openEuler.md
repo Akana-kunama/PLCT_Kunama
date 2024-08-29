@@ -69,3 +69,62 @@ ROS2安装完成后，记得source一下：`source /opt/ros/<version that you in
 > ```
 
 ROS2和colcon安装结束后，需要通过rosdep进行相关依赖的安装：
+
+> 首先进行rosdep的初始化：`sudo rosdep init`
+>
+> 由于rosdep暂时不支持openEuler，需要进行以下操作：
+>
+> ```bash
+> echo 'export ROS_OS_OVERRIDE=centos:7' >> ~/.bashrc
+> source ~/.bashrc
+> ```
+>
+> 或者修改`os_detect.py`文件中的`get_name`、`get_version`函数：
+>
+> ```python
+> def get_name(self):
+> 	return "centos"
+> 
+> def get_version(self):
+> 	return "7"
+> ```
+>
+> 修改结束后，进行update：`sudo rosdep update`
+>
+> update 结束后如下：
+>
+> ![微信截图_20240829150544](pics/微信截图_20240829150544.png)
+>
+> 若出现`raw.githubusercontent.com`访问困难，可以将 `/etc/ros/rosdep/sources.list.d/20-default.list`  文件内容替换为：
+>
+> ```bash
+> # os-specific listings first                                                                                                        
+> # yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml osx                                             
+> yaml https://mirrors.tuna.tsinghua.edu.cn/github-raw/ros/rosdistro/master/rosdep/osx-homebrew.yaml                                     
+>                                                                                                                                        
+> # generic                                                                                                                              
+> # yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml                                                         
+> yaml https://mirrors.tuna.tsinghua.edu.cn/github-raw/ros/rosdistro/master/rosdep/base.yaml                                             
+>                                                                                                                                        
+> # yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml                                                       
+> yaml https://mirrors.tuna.tsinghua.edu.cn/github-raw/ros/rosdistro/master/rosdep/python.yaml                                           
+>                                                                                                                                        
+> # yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml                                                         
+> yaml https://mirrors.tuna.tsinghua.edu.cn/github-raw/ros/rosdistro/master/rosdep/ruby.yaml                                             
+>                                                                                                                                        
+> # gbpdistro https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml fuerte                                         
+> gbpdistro https://mirrors.tuna.tsinghua.edu.cn/github-raw/ros/rosdistro/master/releases/fuerte.yaml fuerte                             
+>                                                                                                                                        
+> # newer distributions (Groovy, Hydro, ...) must not be listed anymore, they are being fetched from the rosdistro index.yaml instead 
+> ```
+
+**安装`vcstoll`:**`pip3 install vcstool`
+
+**创建colcon workspace:**`mkdir -p ~/ws_moveit/src`
+
+**下载MoveIt源码以及Tutorials:**
+
+
+
+
+
