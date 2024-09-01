@@ -96,3 +96,4 @@ source ~/ws_moveit/install/setup.bash
 echo 'source ~/ws_moveit/install/setup.bash' >> ~/.bashrc
 ```
 
+到这里，MoveIt 的基本下载与编译完成，可以进行用例测试
