@@ -1,0 +1,5 @@
+<multibuild>
+	<flavor>gps-common</flavor>
+	<flavor>gps-umd</flavor>
+	<flavor>gpsd-client</flavor>
+</multibuild>

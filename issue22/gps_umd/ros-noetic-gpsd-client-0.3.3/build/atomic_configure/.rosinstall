@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/gps_umd/ros-noetic-gpsd-client-0.3.3/build/devel/setup.sh

@@ -1,0 +1,1641 @@
+error: bad date in %changelog: Web Jan 10 2024 Timo Roehling timo.roehling@fkie.fraunhofer.de - 0.3.3-1
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.39pZyZ
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd /root/rpmbuild/BUILD
++ rm -rf ros-noetic-gps-common-0.3.3
++ /usr/lib/rpm/rpmuncompress -x /root/rpmbuild/SOURCES/ros-noetic-gps-common_0.3.3.orig.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd ros-noetic-gps-common-0.3.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.PW7dfb
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd ros-noetic-gps-common-0.3.3
++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ export ROS_DISTRO=noetic
++ ROS_DISTRO=noetic
++ export ROS_PYTHON_VERSION=3.11
++ ROS_PYTHON_VERSION=3.11
++ '[' -f /opt/ros/noetic/setup.sh ']'
++ . /opt/ros/noetic/setup.sh
+++ : /opt/ros/noetic
+++ _SETUP_UTIL=/opt/ros/noetic/_setup_util.py
+++ unset _CATKIN_SETUP_DIR
+++ '[' '!' -f /opt/ros/noetic/_setup_util.py ']'
++++ uname -s
+++ _UNAME=Linux
+++ _IS_DARWIN=0
+++ '[' Linux = Darwin ']'
+++ unset _UNAME
+++ export CMAKE_PREFIX_PATH
+++ '[' 0 -eq 0 ']'
+++ export LD_LIBRARY_PATH
+++ unset _IS_DARWIN
+++ export PATH
+++ export PKG_CONFIG_PATH
+++ export PYTHONPATH
+++ '[' -z '' ']'
+++ CATKIN_SHELL=sh
+++ '[' -d '' ']'
+++ _TMPDIR=/tmp
++++ mktemp /tmp/setup.sh.XXXXXXXXXX
+++ _SETUP_TMP=/tmp/setup.sh.edfwfSL3uB
+++ unset _TMPDIR
+++ '[' 0 -ne 0 -o '!' -f /tmp/setup.sh.edfwfSL3uB ']'
+++ CATKIN_SHELL=sh
+++ /opt/ros/noetic/_setup_util.py
+++ _RC=0
+++ '[' 0 -ne 0 ']'
+++ unset _RC
+++ unset _SETUP_UTIL
+++ . /tmp/setup.sh.edfwfSL3uB
++++ export CMAKE_PREFIX_PATH=
++++ CMAKE_PREFIX_PATH=
++++ export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=
++++ PYTHONPATH=
++++ export CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ export LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ export _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ export _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
+++ rm -f /tmp/setup.sh.edfwfSL3uB
+++ unset _SETUP_TMP
+++ _i=0
+++ '[' 0 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_0'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ '[' -n noetic -a noetic '!=' noetic ']'
++++ export ROS_DISTRO=noetic
++++ ROS_DISTRO=noetic
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=1
+++ '[' 1 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_1'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ETC_DIR=/opt/ros/noetic/etc/ros
++++ ROS_ETC_DIR=/opt/ros/noetic/etc/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=2
+++ '[' 2 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_2'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++++ cat
++++ PYTHON_CODE_BUILD_ROS_PACKAGE_PATH='from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
+++++ /usr/bin/python3.11 -c 'from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
++++ export ROS_PACKAGE_PATH=/opt/ros/noetic/share
++++ ROS_PACKAGE_PATH=/opt/ros/noetic/share
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=3
+++ '[' 3 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_3'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export ROS_PYTHON_VERSION=3.11
++++ ROS_PYTHON_VERSION=3.11
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=4
+++ '[' 4 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_4'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export ROS_VERSION=1
++++ ROS_VERSION=1
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=5
+++ '[' 5 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_5'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ROOT=/opt/ros/noetic/share/ros
++++ ROS_ROOT=/opt/ros/noetic/share/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=6
+++ '[' 6 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_6'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ '[' '!' http://localhost:11311 ']'
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=7
+++ '[' 7 -lt 7 ']'
+++ unset _i
+++ unset _CATKIN_ENVIRONMENT_HOOKS_COUNT
++ mkdir -p .obj-x86_64-openEuler-linux-gnu
++ cd .obj-x86_64-openEuler-linux-gnu
++ CFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection '
++ export CFLAGS
++ CXXFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection '
++ export CXXFLAGS
++ FFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection  -I/usr/lib64/gfortran/modules'
++ export FFLAGS
++ FCFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection  -I/usr/lib64/gfortran/modules'
++ export FCFLAGS
++ LDFLAGS='-Wl,-z,relro   -Wl,-z,now -specs=/usr/lib/rpm/generic-hardened-ld'
++ export LDFLAGS
++ /usr/bin/cmake -DCMAKE_C_FLAGS_RELEASE:STRING=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE:STRING=-DNDEBUG -DCMAKE_Fortran_FLAGS_RELEASE:STRING=-DNDEBUG -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -DCMAKE_INSTALL_PREFIX:PATH=/usr -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DLIB_SUFFIX=64 -DBUILD_SHARED_LIBS:BOOL=ON -UINCLUDE_INSTALL_DIR -ULIB_INSTALL_DIR -USYSCONF_INSTALL_DIR -USHARE_INSTALL_PREFIX -ULIB_SUFFIX -DCMAKE_INSTALL_PREFIX=/opt/ros/noetic -DAMENT_PREFIX_PATH=/opt/ros/noetic -DCMAKE_PREFIX_PATH=/opt/ros/noetic -DCMAKE_INSTALL_LIBDIR=/opt/ros/noetic/lib -DSETUPTOOLS_DEB_LAYOUT=OFF -DBUILD_TESTING=OFF ..
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The CXX compiler identification is GNU 12.3.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/python.cmake:4 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/all.cmake:164 (include)
+  /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+  CMakeLists.txt:17 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /usr/bin/python3.11 (found suitable version "3.11.6", minimum required is "3.11") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3.11
+-- Using default Python package layout
+-- Found PY_em: /usr/lib/python3.11/site-packages/em.py  
+-- Using empy: /usr/lib/python3.11/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/test_results
+-- Found gtest: gtests will be built
+-- Using Python nosetests: /usr/local/bin/nosetests
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- gps_common: 2 messages, 0 services
+CMake Warning (dev) at CMakeLists.txt:57 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "gps_common/utm_odometry_node" is reserved or not valid for
+  certain CMake features, such as generator expressions, and may result in
+  undefined behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at CMakeLists.txt:58 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "gps_common/utm_odometry_to_navsatfix_node" is reserved or
+  not valid for certain CMake features, such as generator expressions, and
+  may result in undefined behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Installing devel-space wrapper /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/nodes/fix_translator to /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/gps_common
+-- Installing devel-space wrapper /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/scripts/bag_converter to /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/gps_common
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    AMENT_PREFIX_PATH
+    BUILD_TESTING
+    CMAKE_CXX_FLAGS_RELEASE
+    CMAKE_C_FLAGS_RELEASE
+    CMAKE_Fortran_FLAGS_RELEASE
+    CMAKE_INSTALL_LIBDIR
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu
++ /usr/bin/make -O -j4 V=1 VERBOSE=1
+/usr/bin/cmake -S/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 -B/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu//CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/depend
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/depend
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_py.dir/build.make CMakeFiles/nav_msgs_generate_messages_py.dir/depend
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_py.dir/build.make CMakeFiles/nav_msgs_generate_messages_py.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_py.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target nav_msgs_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/depend
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_py.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_py.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target sensor_msgs_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target std_msgs_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_cpp.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_cpp.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target std_msgs_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target nav_msgs_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py gps_common /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSStatus.msg std_msgs/Header
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_eus.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py gps_common /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSFix.msg gps_common/GPSStatus:std_msgs/Header
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target sensor_msgs_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make CMakeFiles/nav_msgs_generate_messages_eus.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target _gps_common_generate_messages_check_deps_GPSStatus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target std_msgs_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target _gps_common_generate_messages_check_deps_GPSFix
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make CMakeFiles/nav_msgs_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_eus.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_eus.dir/build'.
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_lisp.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_lisp.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target nav_msgs_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target sensor_msgs_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target std_msgs_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/nav_msgs_generate_messages_nodejs.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target nav_msgs_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target sensor_msgs_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target std_msgs_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target nav_msgs_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/_catkin_empty_exported_target.dir/build'.
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_cpp.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_eus.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_lisp.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target _catkin_empty_exported_target
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target roscpp_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target roscpp_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/depend
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target roscpp_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_nodejs.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_py.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target roscpp_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target roscpp_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target rosgraph_msgs_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target geometry_msgs_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_eus.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_py.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target geometry_msgs_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target geometry_msgs_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/depend
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target geometry_msgs_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build'.
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target actionlib_msgs_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_py.dir/build.make CMakeFiles/gps_common_generate_messages_py.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_cpp.dir/build.make CMakeFiles/gps_common_generate_messages_cpp.dir/depend
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_eus.dir/build.make CMakeFiles/gps_common_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_py.dir/build'.
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_py.dir/build.make CMakeFiles/gps_common_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_cpp.dir/build.make CMakeFiles/gps_common_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_eus.dir/build.make CMakeFiles/gps_common_generate_messages_eus.dir/build
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target actionlib_msgs_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_lisp.dir/build.make CMakeFiles/gps_common_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_lisp.dir/build.make CMakeFiles/gps_common_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 25%] Generating Lisp code from gps_common/GPSStatus.msg
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSStatus.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/share/common-lisp/ros/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 31%] Generating Lisp code from gps_common/GPSFix.msg
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSFix.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/share/common-lisp/ros/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 31%] Built target gps_common_generate_messages_lisp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_nodejs.dir/build.make CMakeFiles/gps_common_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_nodejs.dir/build.make CMakeFiles/gps_common_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 12%] Generating C++ code from gps_common/GPSStatus.msg
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 && /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSStatus.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/include/gps_common -e /opt/ros/noetic/share/gencpp/cmake/..
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 18%] Generating EusLisp code from gps_common/GPSStatus.msg
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSStatus.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/share/roseus/ros/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 37%] Generating Javascript code from gps_common/GPSStatus.msg
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSStatus.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/share/gennodejs/ros/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  6%] Generating Python from MSG gps_common/GPSStatus
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSStatus.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 56%] Generating Javascript code from gps_common/GPSFix.msg
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSFix.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/share/gennodejs/ros/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 62%] Built target gps_common_generate_messages_nodejs
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 43%] Generating C++ code from gps_common/GPSFix.msg
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 && /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSFix.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/include/gps_common -e /opt/ros/noetic/share/gencpp/cmake/..
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 68%] Built target gps_common_generate_messages_cpp
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 50%] Generating EusLisp code from gps_common/GPSFix.msg
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSFix.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/share/roseus/ros/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 62%] Generating Python from MSG gps_common/GPSFix
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSFix.msg -Igps_common:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p gps_common -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/msg
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Generating Python msg __init__.py for gps_common
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/msg --initpy
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target gps_common_generate_messages_py
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 68%] Generating EusLisp manifest code for gps_common
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/share/roseus/ros/gps_common gps_common nav_msgs sensor_msgs std_msgs
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target gps_common_generate_messages_eus
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages.dir/build.make CMakeFiles/gps_common_generate_messages.dir/depend
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_node.dir/build.make CMakeFiles/gps_common/utm_odometry_node.dir/depend
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/build.make CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common/utm_odometry_node.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_node.dir/build.make CMakeFiles/gps_common/utm_odometry_node.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/build.make CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages.dir/build.make CMakeFiles/gps_common_generate_messages.dir/build
+make[2]: Nothing to be done for 'CMakeFiles/gps_common_generate_messages.dir/build'.
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 87%] Built target gps_common_generate_messages
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 87%] Building CXX object CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/src/utm_odometry_to_navsatfix_node.cpp.o
+/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"gps_common\" -I/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/include -I/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -MD -MT CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/src/utm_odometry_to_navsatfix_node.cpp.o -MF CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/src/utm_odometry_to_navsatfix_node.cpp.o.d -o CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/src/utm_odometry_to_navsatfix_node.cpp.o -c /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/src/utm_odometry_to_navsatfix_node.cpp
+In file included from /usr/include/boost/smart_ptr/detail/requires_cxx11.hpp:9,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/src/utm_odometry_to_navsatfix_node.cpp:7:
+/usr/include/boost/bind.hpp:36:1: note: '#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.'
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 93%] Linking CXX executable devel/lib/gps_common/utm_odometry_to_navsatfix_node
+/usr/bin/cmake -E cmake_link_script CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -Wl,-z,relro   -Wl,-z,now -specs=/usr/lib/rpm/generic-hardened-ld -rdynamic CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/src/utm_odometry_to_navsatfix_node.cpp.o -o devel/lib/gps_common/utm_odometry_to_navsatfix_node  -Wl,-rpath,/opt/ros/noetic/lib: /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so -lboost_filesystem /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_glog.so /opt/ros/noetic/lib/librosconsole_backend_interface.so -lglog -lboost_regex /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so -lboost_date_time /opt/ros/noetic/lib/libcpp_common.so -lboost_system -lboost_thread -lboost_chrono -lboost_atomic /usr/lib64/libconsole_bridge.so.1.0 
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 93%] Built target gps_common/utm_odometry_to_navsatfix_node
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 81%] Building CXX object CMakeFiles/gps_common/utm_odometry_node.dir/src/utm_odometry_node.cpp.o
+/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"gps_common\" -I/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/include -I/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -MD -MT CMakeFiles/gps_common/utm_odometry_node.dir/src/utm_odometry_node.cpp.o -MF CMakeFiles/gps_common/utm_odometry_node.dir/src/utm_odometry_node.cpp.o.d -o CMakeFiles/gps_common/utm_odometry_node.dir/src/utm_odometry_node.cpp.o -c /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/src/utm_odometry_node.cpp
+In file included from /usr/include/boost/smart_ptr/detail/requires_cxx11.hpp:9,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /opt/ros/noetic/include/ros/forwards.h:37,
+                 from /opt/ros/noetic/include/ros/common.h:37,
+                 from /opt/ros/noetic/include/ros/ros.h:43,
+                 from /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/src/utm_odometry_node.cpp:5:
+/usr/include/boost/bind.hpp:36:1: note: '#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.'
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[100%] Linking CXX executable devel/lib/gps_common/utm_odometry_node
+/usr/bin/cmake -E cmake_link_script CMakeFiles/gps_common/utm_odometry_node.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -Wl,-z,relro   -Wl,-z,now -specs=/usr/lib/rpm/generic-hardened-ld -rdynamic CMakeFiles/gps_common/utm_odometry_node.dir/src/utm_odometry_node.cpp.o -o devel/lib/gps_common/utm_odometry_node  -Wl,-rpath,/opt/ros/noetic/lib: /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so -lboost_filesystem /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_glog.so /opt/ros/noetic/lib/librosconsole_backend_interface.so -lglog -lboost_regex /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so -lboost_date_time /opt/ros/noetic/lib/libcpp_common.so -lboost_system -lboost_thread -lboost_chrono -lboost_atomic /usr/lib64/libconsole_bridge.so.1.0 
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[100%] Built target gps_common/utm_odometry_node
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles 0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.pgmi8Y
++ umask 022
++ cd /root/rpmbuild/BUILD
++ '[' /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64 '!=' / ']'
++ rm -rf /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64
+++ dirname /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64
++ mkdir -p /root/rpmbuild/BUILDROOT
++ mkdir /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64
++ cd ros-noetic-gps-common-0.3.3
++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ '[' -f /opt/ros/noetic/setup.sh ']'
++ . /opt/ros/noetic/setup.sh
+++ : /opt/ros/noetic
+++ _SETUP_UTIL=/opt/ros/noetic/_setup_util.py
+++ unset _CATKIN_SETUP_DIR
+++ '[' '!' -f /opt/ros/noetic/_setup_util.py ']'
++++ uname -s
+++ _UNAME=Linux
+++ _IS_DARWIN=0
+++ '[' Linux = Darwin ']'
+++ unset _UNAME
+++ export CMAKE_PREFIX_PATH
+++ '[' 0 -eq 0 ']'
+++ export LD_LIBRARY_PATH
+++ unset _IS_DARWIN
+++ export PATH
+++ export PKG_CONFIG_PATH
+++ export PYTHONPATH
+++ '[' -z '' ']'
+++ CATKIN_SHELL=sh
+++ '[' -d '' ']'
+++ _TMPDIR=/tmp
++++ mktemp /tmp/setup.sh.XXXXXXXXXX
+++ _SETUP_TMP=/tmp/setup.sh.ZA0caXJoYu
+++ unset _TMPDIR
+++ '[' 0 -ne 0 -o '!' -f /tmp/setup.sh.ZA0caXJoYu ']'
+++ CATKIN_SHELL=sh
+++ /opt/ros/noetic/_setup_util.py
+++ _RC=0
+++ '[' 0 -ne 0 ']'
+++ unset _RC
+++ unset _SETUP_UTIL
+++ . /tmp/setup.sh.ZA0caXJoYu
++++ export CMAKE_PREFIX_PATH=
++++ CMAKE_PREFIX_PATH=
++++ export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=
++++ PYTHONPATH=
++++ export CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ export LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ export _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ export _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
+++ rm -f /tmp/setup.sh.ZA0caXJoYu
+++ unset _SETUP_TMP
+++ _i=0
+++ '[' 0 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_0'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ '[' -n noetic -a noetic '!=' noetic ']'
++++ export ROS_DISTRO=noetic
++++ ROS_DISTRO=noetic
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=1
+++ '[' 1 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_1'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ETC_DIR=/opt/ros/noetic/etc/ros
++++ ROS_ETC_DIR=/opt/ros/noetic/etc/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=2
+++ '[' 2 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_2'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++++ cat
++++ PYTHON_CODE_BUILD_ROS_PACKAGE_PATH='from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
+++++ /usr/bin/python3.11 -c 'from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
++++ export ROS_PACKAGE_PATH=/opt/ros/noetic/share
++++ ROS_PACKAGE_PATH=/opt/ros/noetic/share
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=3
+++ '[' 3 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_3'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export ROS_PYTHON_VERSION=3.11
++++ ROS_PYTHON_VERSION=3.11
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=4
+++ '[' 4 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_4'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export ROS_VERSION=1
++++ ROS_VERSION=1
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=5
+++ '[' 5 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_5'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ROOT=/opt/ros/noetic/share/ros
++++ ROS_ROOT=/opt/ros/noetic/share/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=6
+++ '[' 6 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_6'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ '[' '!' http://localhost:11311 ']'
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=7
+++ '[' 7 -lt 7 ']'
+++ unset _i
+++ unset _CATKIN_ENVIRONMENT_HOOKS_COUNT
++ /usr/bin/make install DESTDIR=/root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64 'INSTALL=/usr/bin/install -p' -C .obj-x86_64-openEuler-linux-gnu
+make: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/cmake -S/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 -B/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu//CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSFix.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py gps_common /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSFix.msg gps_common/GPSStatus:std_msgs/Header
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target _gps_common_generate_messages_check_deps_GPSFix
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target std_msgs_generate_messages_py
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_py.dir/build.make CMakeFiles/nav_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_py.dir/build.make CMakeFiles/nav_msgs_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target nav_msgs_generate_messages_py
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target sensor_msgs_generate_messages_py
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/build.make CMakeFiles/_gps_common_generate_messages_check_deps_GPSStatus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+catkin_generated/env_cached.sh /usr/bin/python3.11 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py gps_common /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/msg/GPSStatus.msg std_msgs/Header
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[  0%] Built target _gps_common_generate_messages_check_deps_GPSStatus
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_py.dir/build.make CMakeFiles/gps_common_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_py.dir/build.make CMakeFiles/gps_common_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 18%] Built target gps_common_generate_messages_py
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 18%] Built target std_msgs_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 18%] Built target nav_msgs_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 18%] Built target sensor_msgs_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_cpp.dir/build.make CMakeFiles/gps_common_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_cpp.dir/build.make CMakeFiles/gps_common_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 31%] Built target gps_common_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 31%] Built target std_msgs_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make CMakeFiles/nav_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 31%] Built target nav_msgs_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 31%] Built target sensor_msgs_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_eus.dir/build.make CMakeFiles/gps_common_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_eus.dir/build.make CMakeFiles/gps_common_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 50%] Built target gps_common_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 50%] Built target std_msgs_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make CMakeFiles/nav_msgs_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 50%] Built target nav_msgs_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 50%] Built target sensor_msgs_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_lisp.dir/build.make CMakeFiles/gps_common_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_lisp.dir/build.make CMakeFiles/gps_common_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 62%] Built target gps_common_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/std_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 62%] Built target std_msgs_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/nav_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 62%] Built target nav_msgs_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 62%] Built target sensor_msgs_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_nodejs.dir/build.make CMakeFiles/gps_common_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages_nodejs.dir/build.make CMakeFiles/gps_common_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target gps_common_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages.dir/build.make CMakeFiles/gps_common_generate_messages.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common_generate_messages.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common_generate_messages.dir/build.make CMakeFiles/gps_common_generate_messages.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common_generate_messages.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target gps_common_generate_messages
+/usr/bin/make  -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/_catkin_empty_exported_target.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target _catkin_empty_exported_target
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target roscpp_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target roscpp_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target roscpp_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target roscpp_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/roscpp_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target roscpp_generate_messages_py
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target rosgraph_msgs_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target rosgraph_msgs_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target rosgraph_msgs_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target rosgraph_msgs_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target rosgraph_msgs_generate_messages_py
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target geometry_msgs_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target geometry_msgs_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target geometry_msgs_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target geometry_msgs_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/geometry_msgs_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target geometry_msgs_generate_messages_py
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target actionlib_msgs_generate_messages_cpp
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target actionlib_msgs_generate_messages_eus
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target actionlib_msgs_generate_messages_lisp
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target actionlib_msgs_generate_messages_nodejs
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/actionlib_msgs_generate_messages_py.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 75%] Built target actionlib_msgs_generate_messages_py
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_node.dir/build.make CMakeFiles/gps_common/utm_odometry_node.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common/utm_odometry_node.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_node.dir/build.make CMakeFiles/gps_common/utm_odometry_node.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common/utm_odometry_node.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[ 87%] Built target gps_common/utm_odometry_node
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/build.make CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/depend
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/make  -f CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/build.make CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/build
+make[2]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[2]: Nothing to be done for 'CMakeFiles/gps_common/utm_odometry_to_navsatfix_node.dir/build'.
+make[2]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+[100%] Built target gps_common/utm_odometry_to_navsatfix_node
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles 0
+/usr/bin/make  -f CMakeFiles/Makefile2 preinstall
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Nothing to be done for 'preinstall'.
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: ""
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/_setup_util.py
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/env.sh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/setup.bash
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/local_setup.bash
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/setup.sh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/local_setup.sh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/setup.zsh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/local_setup.zsh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/.rosinstall
++ cd /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3
++ mkdir -p /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages
++ /usr/bin/env PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages:/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/lib/python3.11/site-packages:/opt/ros/noetic/lib/python3.11/site-packages CATKIN_BINARY_DIR=/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu /usr/bin/python3.11 /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/setup.py build --build-base /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu install --root=/root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64 --prefix=/opt/ros/noetic --install-scripts=/opt/ros/noetic/bin
+/opt/ros/noetic/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gps_common/msg/GPSStatus.msg
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gps_common/msg/GPSFix.msg
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gps_common/cmake/gps_common-msg-paths.cmake
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/include/gps_common
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/include/gps_common/GPSStatus.h
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/include/gps_common/GPSFix.h
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/roseus/ros/gps_common
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/roseus/ros/gps_common/msg
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/roseus/ros/gps_common/msg/GPSStatus.l
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/roseus/ros/gps_common/msg/GPSFix.l
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/roseus/ros/gps_common/manifest.l
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common/msg
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common/msg/gps_common-msg.asd
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common/msg/GPSStatus.lisp
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common/msg/_package_GPSStatus.lisp
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common/msg/_package.lisp
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common/msg/GPSFix.lisp
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/common-lisp/ros/gps_common/msg/_package_GPSFix.lisp
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gennodejs/ros/gps_common
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gennodejs/ros/gps_common/msg
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gennodejs/ros/gps_common/msg/GPSFix.js
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gennodejs/ros/gps_common/msg/GPSStatus.js
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gennodejs/ros/gps_common/msg/_index.js
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gennodejs/ros/gps_common/_index.js
+Listing '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common'...
+Compiling '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/__init__.py'...
+Listing '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/msg'...
+Compiling '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/msg/_GPSFix.py'...
+Compiling '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/msg/_GPSStatus.py'...
+Compiling '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel/lib/python3.11/site-packages/gps_common/msg/__init__.py'...
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/_GPSStatus.py
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/_GPSFix.py
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/__pycache__
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/__pycache__/__init__.cpython-311.pyc
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/__pycache__/_GPSStatus.cpython-311.pyc
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/__pycache__/_GPSFix.cpython-311.pyc
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/__pycache__
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/__pycache__/__init__.cpython-311.pyc
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/__init__.py
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/msg/__pycache__
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/python3.11/site-packages/gps_common/__pycache__
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/pkgconfig/gps_common.pc
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gps_common/cmake/gps_common-msg-extras.cmake
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gps_common/cmake/gps_commonConfig.cmake
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gps_common/cmake/gps_commonConfig-version.cmake
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/share/gps_common/package.xml
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_node
+-- Set runtime path of "/root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_node" to ""
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_to_navsatfix_node
+-- Set runtime path of "/root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_to_navsatfix_node" to ""
+-- Up-to-date: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/include/gps_common
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/include/gps_common/conversions.h
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/fix_translator
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/bag_converter
+make: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3/.obj-x86_64-openEuler-linux-gnu'
++ /usr/bin/find-debuginfo -j4 --strict-build-id -i --build-id-seed 0.3.3-1 --unique-debug-suffix -0.3.3-1.x86_64 --unique-debug-src-base ros-noetic-gps-common-0.3.3-1.x86_64 -S debugsourcefiles.list /root/rpmbuild/BUILD/ros-noetic-gps-common-0.3.3
+explicitly decompress any DWARF compressed ELF sections in /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_node
+explicitly decompress any DWARF compressed ELF sections in /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_to_navsatfix_node
+extracting debug info from /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_node
+extracting debug info from /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64/opt/ros/noetic/lib/gps_common/utm_odometry_to_navsatfix_node
+30 blocks
++ '[' '%{buildarch}' = noarch ']'
++ QA_CHECK_RPATHS=1
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-rpaths
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-ldconfig
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-hardlink
+Processing files: ros-noetic-gps-common-0.3.3-1.x86_64
+Provides: ros-noetic-gps-common = 0.3.3-1 ros-noetic-gps-common(x86-64) = 0.3.3-1 ros-noetic-gps-common-devel = 0.3.3-1 ros-noetic-gps-common-doc = 0.3.3-1 ros-noetic-gps-common-runtime = 0.3.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: ros-noetic-gps-common-debuginfo-0.3.3-1.x86_64
+Provides: ros-noetic-gps-common-debuginfo = 0.3.3-1 ros-noetic-gps-common-debuginfo(x86-64) = 0.3.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: ros-noetic-gps-common-debugsource(x86-64) = 0.3.3-1
+Processing files: ros-noetic-gps-common-debugsource-0.3.3-1.x86_64
+Provides: ros-noetic-gps-common-debugsource = 0.3.3-1 ros-noetic-gps-common-debugsource(x86-64) = 0.3.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64
+Wrote: /root/rpmbuild/SRPMS/ros-noetic-gps-common-0.3.3-1.src.rpm
+Wrote: /root/rpmbuild/RPMS/x86_64/ros-noetic-gps-common-debugsource-0.3.3-1.x86_64.rpm
+Wrote: /root/rpmbuild/RPMS/x86_64/ros-noetic-gps-common-0.3.3-1.x86_64.rpm
+Wrote: /root/rpmbuild/RPMS/x86_64/ros-noetic-gps-common-debuginfo-0.3.3-1.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.wnwh3n
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd ros-noetic-gps-common-0.3.3
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/ros-noetic-gps-common-0.3.3-1.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(rmbuild): /bin/sh -e /var/tmp/rpm-tmp.LmPQZq
++ umask 022
++ cd /root/rpmbuild/BUILD
++ rm -rf ros-noetic-gps-common-0.3.3 ros-noetic-gps-common-0.3.3.gemspec
++ RPM_EC=0
+++ jobs -p
++ exit 0

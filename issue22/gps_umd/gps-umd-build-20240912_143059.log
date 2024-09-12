@@ -1,0 +1,623 @@
+error: bad date in %changelog: Web Jan 10 2024 Ken Tossell ken@tossell.net - 0.3.3-1
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.HtQ4XL
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd /root/rpmbuild/BUILD
++ rm -rf ros-noetic-gps-umd-0.3.3
++ /usr/lib/rpm/rpmuncompress -x /root/rpmbuild/SOURCES/ros-noetic-gps-umd_0.3.3.orig.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd ros-noetic-gps-umd-0.3.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.vJWBH3
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd ros-noetic-gps-umd-0.3.3
++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ export ROS_DISTRO=noetic
++ ROS_DISTRO=noetic
++ export ROS_PYTHON_VERSION=3.11
++ ROS_PYTHON_VERSION=3.11
++ '[' -f /opt/ros/noetic/setup.sh ']'
++ . /opt/ros/noetic/setup.sh
+++ : /opt/ros/noetic
+++ _SETUP_UTIL=/opt/ros/noetic/_setup_util.py
+++ unset _CATKIN_SETUP_DIR
+++ '[' '!' -f /opt/ros/noetic/_setup_util.py ']'
++++ uname -s
+++ _UNAME=Linux
+++ _IS_DARWIN=0
+++ '[' Linux = Darwin ']'
+++ unset _UNAME
+++ export CMAKE_PREFIX_PATH
+++ '[' 0 -eq 0 ']'
+++ export LD_LIBRARY_PATH
+++ unset _IS_DARWIN
+++ export PATH
+++ export PKG_CONFIG_PATH
+++ export PYTHONPATH
+++ '[' -z '' ']'
+++ CATKIN_SHELL=sh
+++ '[' -d '' ']'
+++ _TMPDIR=/tmp
++++ mktemp /tmp/setup.sh.XXXXXXXXXX
+++ _SETUP_TMP=/tmp/setup.sh.IDiSEgdVQL
+++ unset _TMPDIR
+++ '[' 0 -ne 0 -o '!' -f /tmp/setup.sh.IDiSEgdVQL ']'
+++ CATKIN_SHELL=sh
+++ /opt/ros/noetic/_setup_util.py
+++ _RC=0
+++ '[' 0 -ne 0 ']'
+++ unset _RC
+++ unset _SETUP_UTIL
+++ . /tmp/setup.sh.IDiSEgdVQL
++++ export CMAKE_PREFIX_PATH=
++++ CMAKE_PREFIX_PATH=
++++ export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=
++++ PYTHONPATH=
++++ export CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ export LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ export _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ export _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
+++ rm -f /tmp/setup.sh.IDiSEgdVQL
+++ unset _SETUP_TMP
+++ _i=0
+++ '[' 0 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_0'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ '[' -n noetic -a noetic '!=' noetic ']'
++++ export ROS_DISTRO=noetic
++++ ROS_DISTRO=noetic
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=1
+++ '[' 1 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_1'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ETC_DIR=/opt/ros/noetic/etc/ros
++++ ROS_ETC_DIR=/opt/ros/noetic/etc/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=2
+++ '[' 2 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_2'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++++ cat
++++ PYTHON_CODE_BUILD_ROS_PACKAGE_PATH='from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
+++++ /usr/bin/python3.11 -c 'from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
++++ export ROS_PACKAGE_PATH=/opt/ros/noetic/share
++++ ROS_PACKAGE_PATH=/opt/ros/noetic/share
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=3
+++ '[' 3 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_3'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export ROS_PYTHON_VERSION=3.11
++++ ROS_PYTHON_VERSION=3.11
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=4
+++ '[' 4 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_4'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export ROS_VERSION=1
++++ ROS_VERSION=1
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=5
+++ '[' 5 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_5'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ROOT=/opt/ros/noetic/share/ros
++++ ROS_ROOT=/opt/ros/noetic/share/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=6
+++ '[' 6 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_6'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ '[' '!' http://localhost:11311 ']'
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=7
+++ '[' 7 -lt 7 ']'
+++ unset _i
+++ unset _CATKIN_ENVIRONMENT_HOOKS_COUNT
++ mkdir -p .obj-x86_64-openEuler-linux-gnu
++ cd .obj-x86_64-openEuler-linux-gnu
++ CFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection '
++ export CFLAGS
++ CXXFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection '
++ export CXXFLAGS
++ FFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection  -I/usr/lib64/gfortran/modules'
++ export FFLAGS
++ FCFLAGS='-O2 -g -grecord-gcc-switches -pipe -fstack-protector-strong  -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/generic-hardened-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection  -I/usr/lib64/gfortran/modules'
++ export FCFLAGS
++ LDFLAGS='-Wl,-z,relro   -Wl,-z,now -specs=/usr/lib/rpm/generic-hardened-ld'
++ export LDFLAGS
++ /usr/bin/cmake -DCMAKE_C_FLAGS_RELEASE:STRING=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE:STRING=-DNDEBUG -DCMAKE_Fortran_FLAGS_RELEASE:STRING=-DNDEBUG -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -DCMAKE_INSTALL_PREFIX:PATH=/usr -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DLIB_SUFFIX=64 -DBUILD_SHARED_LIBS:BOOL=ON -UINCLUDE_INSTALL_DIR -ULIB_INSTALL_DIR -USYSCONF_INSTALL_DIR -USHARE_INSTALL_PREFIX -ULIB_SUFFIX -DCMAKE_INSTALL_PREFIX=/opt/ros/noetic -DAMENT_PREFIX_PATH=/opt/ros/noetic -DCMAKE_PREFIX_PATH=/opt/ros/noetic -DCMAKE_INSTALL_LIBDIR=/opt/ros/noetic/lib -DSETUPTOOLS_DEB_LAYOUT=OFF -DBUILD_TESTING=OFF ..
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 12.3.1
+-- The CXX compiler identification is GNU 12.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/python.cmake:4 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/all.cmake:164 (include)
+  /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+  CMakeLists.txt:3 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /usr/bin/python3.11 (found suitable version "3.11.6", minimum required is "3.11") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3.11
+-- Using default Python package layout
+-- Found PY_em: /usr/lib/python3.11/site-packages/em.py  
+-- Using empy: /usr/lib/python3.11/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu/test_results
+-- Found gtest: gtests will be built
+-- Using Python nosetests: /usr/local/bin/nosetests
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    AMENT_PREFIX_PATH
+    BUILD_TESTING
+    CMAKE_CXX_FLAGS_RELEASE
+    CMAKE_C_FLAGS_RELEASE
+    CMAKE_Fortran_FLAGS_RELEASE
+    CMAKE_INSTALL_LIBDIR
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu
++ /usr/bin/make -O -j4 V=1 VERBOSE=1
+/usr/bin/cmake -S/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3 -B/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu//CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+make[1]: Nothing to be done for 'all'.
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles 0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.h8vxGt
++ umask 022
++ cd /root/rpmbuild/BUILD
++ '[' /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64 '!=' / ']'
++ rm -rf /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64
+++ dirname /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64
++ mkdir -p /root/rpmbuild/BUILDROOT
++ mkdir /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64
++ cd ros-noetic-gps-umd-0.3.3
++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++ '[' -f /opt/ros/noetic/setup.sh ']'
++ . /opt/ros/noetic/setup.sh
+++ : /opt/ros/noetic
+++ _SETUP_UTIL=/opt/ros/noetic/_setup_util.py
+++ unset _CATKIN_SETUP_DIR
+++ '[' '!' -f /opt/ros/noetic/_setup_util.py ']'
++++ uname -s
+++ _UNAME=Linux
+++ _IS_DARWIN=0
+++ '[' Linux = Darwin ']'
+++ unset _UNAME
+++ export CMAKE_PREFIX_PATH
+++ '[' 0 -eq 0 ']'
+++ export LD_LIBRARY_PATH
+++ unset _IS_DARWIN
+++ export PATH
+++ export PKG_CONFIG_PATH
+++ export PYTHONPATH
+++ '[' -z '' ']'
+++ CATKIN_SHELL=sh
+++ '[' -d '' ']'
+++ _TMPDIR=/tmp
++++ mktemp /tmp/setup.sh.XXXXXXXXXX
+++ _SETUP_TMP=/tmp/setup.sh.7zjVOoy7B6
+++ unset _TMPDIR
+++ '[' 0 -ne 0 -o '!' -f /tmp/setup.sh.7zjVOoy7B6 ']'
+++ CATKIN_SHELL=sh
+++ /opt/ros/noetic/_setup_util.py
+++ _RC=0
+++ '[' 0 -ne 0 ']'
+++ unset _RC
+++ unset _SETUP_UTIL
+++ . /tmp/setup.sh.7zjVOoy7B6
++++ export CMAKE_PREFIX_PATH=
++++ CMAKE_PREFIX_PATH=
++++ export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=
++++ PYTHONPATH=
++++ export CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ CMAKE_PREFIX_PATH=/opt/ros/noetic
++++ export LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ LD_LIBRARY_PATH=/opt/ros/noetic/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/lib64:/usr/local/lib
++++ export PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ PATH=/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
++++ export PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
++++ export PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ PYTHONPATH=/opt/ros/noetic/lib/python3.11/site-packages
++++ export _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ _CATKIN_ENVIRONMENT_HOOKS_COUNT=7
++++ export _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_0=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_1=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_2=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_3=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_4=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_5=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE=/opt/ros/noetic
++++ export _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ _CATKIN_ENVIRONMENT_HOOKS_6=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ export _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
++++ _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE=/opt/ros/noetic
+++ rm -f /tmp/setup.sh.7zjVOoy7B6
+++ unset _SETUP_TMP
+++ _i=0
+++ '[' 0 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_0'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_0_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_distro.sh
++++ '[' -n noetic -a noetic '!=' noetic ']'
++++ export ROS_DISTRO=noetic
++++ ROS_DISTRO=noetic
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=1
+++ '[' 1 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_1'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_1_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_etc_dir.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ETC_DIR=/opt/ros/noetic/etc/ros
++++ ROS_ETC_DIR=/opt/ros/noetic/etc/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=2
+++ '[' 2 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_2'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_2_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_package_path.sh
+++++ cat
++++ PYTHON_CODE_BUILD_ROS_PACKAGE_PATH='from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
+++++ /usr/bin/python3.11 -c 'from __future__ import print_function
+import os
+env_name = '\''CMAKE_PREFIX_PATH'\''
+paths = [path for path in os.environ[env_name].split(os.pathsep)] if env_name in os.environ and os.environ[env_name] != '\'''\'' else []
+workspaces = [path for path in paths if os.path.exists(os.path.join(path, '\''.catkin'\''))]
+paths = []
+for workspace in workspaces:
+    filename = os.path.join(workspace, '\''.catkin'\'')
+    data = '\'''\''
+    with open(filename) as f:
+        data = f.read()
+    if data == '\'''\'':
+        paths.append(os.path.join(workspace, '\''share'\''))
+        if os.path.isdir(os.path.join(workspace, '\''stacks'\'')):
+            paths.append(os.path.join(workspace, '\''stacks'\''))
+    else:
+        for source_path in data.split('\'';'\''):
+            paths.append(source_path)
+print(os.pathsep.join(paths))'
++++ export ROS_PACKAGE_PATH=/opt/ros/noetic/share
++++ ROS_PACKAGE_PATH=/opt/ros/noetic/share
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=3
+++ '[' 3 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_3'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_3_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_python_version.sh
++++ export ROS_PYTHON_VERSION=3.11
++++ ROS_PYTHON_VERSION=3.11
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=4
+++ '[' 4 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_4'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_4_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/1.ros_version.sh
++++ export ROS_VERSION=1
++++ ROS_VERSION=1
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=5
+++ '[' 5 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_5'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_5_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.rosbuild.sh
++++ '[' -z /opt/ros/noetic ']'
++++ export ROS_ROOT=/opt/ros/noetic/share/ros
++++ ROS_ROOT=/opt/ros/noetic/share/ros
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=6
+++ '[' 6 -lt 7 ']'
+++ eval '_envfile=$_CATKIN_ENVIRONMENT_HOOKS_6'
++++ _envfile=/opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6
+++ eval '_envfile_workspace=$_CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE'
++++ _envfile_workspace=/opt/ros/noetic
+++ unset _CATKIN_ENVIRONMENT_HOOKS_6_WORKSPACE
+++ CATKIN_ENV_HOOK_WORKSPACE=/opt/ros/noetic
+++ . /opt/ros/noetic/etc/catkin/profile.d/10.roslaunch.sh
++++ '[' '!' http://localhost:11311 ']'
+++ unset CATKIN_ENV_HOOK_WORKSPACE
+++ _i=7
+++ '[' 7 -lt 7 ']'
+++ unset _i
+++ unset _CATKIN_ENVIRONMENT_HOOKS_COUNT
++ /usr/bin/make install DESTDIR=/root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64 'INSTALL=/usr/bin/install -p' -C .obj-x86_64-openEuler-linux-gnu
+make: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/cmake -S/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3 -B/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu//CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu/CMakeFiles 0
+/usr/bin/make  -f CMakeFiles/Makefile2 preinstall
+make[1]: Entering directory '/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+make[1]: Nothing to be done for 'preinstall'.
+make[1]: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: ""
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/_setup_util.py
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/env.sh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/setup.bash
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/local_setup.bash
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/setup.sh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/local_setup.sh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/setup.zsh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/local_setup.zsh
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/.rosinstall
+-- Installing: /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64/opt/ros/noetic/share/gps_umd/package.xml
+make: Leaving directory '/root/rpmbuild/BUILD/ros-noetic-gps-umd-0.3.3/.obj-x86_64-openEuler-linux-gnu'
++ '[' '%{buildarch}' = noarch ']'
++ QA_CHECK_RPATHS=1
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-rpaths
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-ldconfig
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-hardlink
+Processing files: ros-noetic-gps-umd-0.3.3-1.x86_64
+Provides: ros-noetic-gps-umd = 0.3.3-1 ros-noetic-gps-umd(x86-64) = 0.3.3-1 ros-noetic-gps-umd-devel = 0.3.3-1 ros-noetic-gps-umd-doc = 0.3.3-1 ros-noetic-gps-umd-runtime = 0.3.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64
+Wrote: /root/rpmbuild/SRPMS/ros-noetic-gps-umd-0.3.3-1.src.rpm
+Wrote: /root/rpmbuild/RPMS/x86_64/ros-noetic-gps-umd-0.3.3-1.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.BpJGoI
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd ros-noetic-gps-umd-0.3.3
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/ros-noetic-gps-umd-0.3.3-1.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(rmbuild): /bin/sh -e /var/tmp/rpm-tmp.v9db2J
++ umask 022
++ cd /root/rpmbuild/BUILD
++ rm -rf ros-noetic-gps-umd-0.3.3 ros-noetic-gps-umd-0.3.3.gemspec
++ RPM_EC=0
+++ jobs -p
++ exit 0
