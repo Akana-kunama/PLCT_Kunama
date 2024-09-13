@@ -4,7 +4,7 @@
 
 作者: Dirk Thomas  
 
-翻译：
+翻译：[Akana-kunama ](https://github.com/Akana-kunama)
 
 撰写日期: 2014-08 
 

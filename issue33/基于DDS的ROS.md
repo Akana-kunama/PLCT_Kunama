@@ -6,7 +6,7 @@
 
 作者： [William Woodall](https://github.com/wjwwood)
 
-翻译：
+翻译：[Akana-kunama ](https://github.com/Akana-kunama)
 
 写于：2014-06
 
