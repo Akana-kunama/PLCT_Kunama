@@ -1,8 +1,10 @@
+Fork 原始仓库到：[gps_umd: The Robot Operating System(ROS) project, include gpsd-client,gps-msgs,gps-tools,gps-umd. (gitee.com)](https://gitee.com/Kukimikun/gps_umd)
 
+![](pics/image-20240913234625414.png)
 
-**Current**
+尝试对源码进行编译
 
-从gpsd仓库下clone 对应版本:
+从gpsd仓库下clone 对应gpsd版本:
 
 ```bash
 git clone https://gitlab.com/gpsd/gpsd.git
@@ -63,3 +65,9 @@ rpmbuild -ba gpsd-client.spec --define 'ros_distro noetic'
 ```
 
 生成日志： [gpsd-client-build-20240912_142730.log](gps_umd\gpsd-client-build-20240912_142730.log) 
+
+修改后的文件重新push到了个人仓库
+
+openMaker编译结果：
+
+![](pics/image-20240913234722446.png)
