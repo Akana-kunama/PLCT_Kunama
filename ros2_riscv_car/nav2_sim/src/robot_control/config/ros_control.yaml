@@ -1,0 +1,18 @@
+# robot_controller.yaml
+
+robot_description: "xacro file or URDF content"  # This should be the URDF or xacro description of your robot.
+
+# The controller manager will load the following controllers
+controller_manager:
+  update_rate: 100  # Controller update rate in Hz
+
+  # Controllers
+  controllers:
+    - name: diff_drive_controller
+      type: "diff_drive_controller/DiffDriveController"
+      left_wheel: "zh_Joint"       # The left wheel joint
+      right_wheel: "yh_Joint"     # The right wheel joint
+      cmd_vel_topic: "/cmd_vel"            # Topic for receiving velocity commands
+      publish_rate: 50                     # Publish rate in Hz
+      wheel_separation: 0.5                # Distance between the two wheels (meters)
+      wheel_radius: 0.1                   # Radius of the wheels (meters)

@@ -1,0 +1,80 @@
+[0.021s] Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description
+[0.092s] -- The C compiler identification is GNU 12.3.0
+[0.157s] -- The CXX compiler identification is GNU 12.3.0
+[0.166s] -- Detecting C compiler ABI info
+[0.254s] -- Detecting C compiler ABI info - done
+[0.262s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.262s] -- Detecting C compile features
+[0.262s] -- Detecting C compile features - done
+[0.266s] -- Detecting CXX compiler ABI info
+[0.368s] -- Detecting CXX compiler ABI info - done
+[0.381s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.382s] -- Detecting CXX compile features
+[0.383s] -- Detecting CXX compile features - done
+[0.390s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.587s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.664s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.730s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.801s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.813s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.833s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.855s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.880s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.951s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.957s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.087s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.111s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.138s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.156s] -- Looking for pthread.h
+[1.252s] -- Looking for pthread.h - found
+[1.253s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.345s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.346s] -- Found Threads: TRUE  
+[1.405s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.447s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.491s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.492s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.492s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.625s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.629s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.725s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.726s] -- Added test 'lint_cmake' to check CMake code style
+[1.727s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.729s] -- Added test 'xmllint' to check XML markup files
+[1.731s] -- Configuring done
+[1.737s] -- Generating done
+[1.739s] -- Build files have been written to: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description
+[1.750s] Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description
+[1.751s] Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description -- -j12 -l12
+[1.811s] Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description -- -j12 -l12
+[1.850s] Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description
+[1.858s] -- Install configuration: ""
+[1.859s] -- Execute custom install script
+[1.859s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/urdf/MicroROS.urdf
+[1.872s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/base_link.STL
+[1.892s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/imu_Link.STL
+[1.903s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/jq1_Link.STL
+[1.913s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/jq2_Link.STL
+[1.924s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/radar_Link.STL
+[1.934s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/radar_Link3x.STL
+[1.945s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/yh_Link.STL
+[1.966s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/yq_Link.STL
+[1.981s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/zh_Link.STL
+[1.992s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/meshes/zq_Link.STL
+[2.003s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/launch/robot_description_launch.py
+[2.014s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[2.025s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[2.036s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[2.047s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[2.058s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/environment/path.sh
+[2.069s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/environment/path.dsv
+[2.080s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/local_setup.bash
+[2.092s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/local_setup.sh
+[2.103s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/local_setup.zsh
+[2.119s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/local_setup.dsv
+[2.132s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.dsv
+[2.142s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[2.153s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[2.164s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[2.175s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.xml
+[2.198s] Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description
