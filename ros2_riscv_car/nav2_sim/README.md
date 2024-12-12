@@ -21,6 +21,8 @@ Desicription : to display robot and the simulation environment
 ![](pics/robot_displayr4.png)
 
 
+***
+
 
 `ros2 launch robot_slam slam_mapping_launch.py`
 
@@ -28,5 +30,8 @@ Desicription : to display robot and the simulation environment
 
 `ros2 launch robot_slam map_saving_launch.py`
  + able to save map to specified path
+
+`ros2 launch robot_slam acml_launch.py`
+ + able to load saved map 
 
 ![](pics/robot_mapping_load_and_save.png)
