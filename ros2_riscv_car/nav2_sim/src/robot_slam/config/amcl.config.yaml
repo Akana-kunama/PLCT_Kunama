@@ -1,0 +1,54 @@
+amcl:
+  ros__parameters:
+    use_sim_time: true  # Use simulation time provided by Gazebo
+
+    # Frame configuration
+    map_frame: "map"            # Frame ID for the map
+    odom_frame: "odom"          # Frame ID for odometry
+    base_frame: "base_link"     # Frame ID for the robot base
+
+    # Topics
+    laser_scan_topic: "/scan"    # Topic name for laser scans
+    odom_topic: "/odom"          # Topic name for odometry
+
+    # Laser model parameters
+    laser_min_range: 0.1         # Minimum laser range in meters
+    laser_max_range: 10.0        # Maximum laser range in meters
+    laser_max_beams: 720          # Maximum number of laser beams to use
+
+    # Particle filter parameters
+    min_particles: 500           # Minimum number of particles
+    max_particles: 2000          # Maximum number of particles
+    update_min_d: 0.2            # Minimum distance (meters) to update pose
+    update_min_a: 0.2            # Minimum angle (radians) to update pose
+
+    # Motion model parameters
+    alpha1: 0.2                  # Noise parameter for rotation about the Z axis
+    alpha2: 0.2                  # Noise parameter for translation
+    alpha3: 0.2                  # Noise parameter for rotation about the Y axis
+    alpha4: 0.2                  # Noise parameter for rotation about the X axis
+    alpha5: 0.2                  # Noise parameter for sliding
+
+    # Sensor model parameters
+    sigma_hit: 0.2               # Standard deviation of the sensor model
+    lambda_short: 0.1            # Short reading model parameter
+    laser_z_hit: 1.0             # Likelihood of a single beam hitting an obstacle
+    laser_z_rand: 0.1             # Likelihood of a single beam being random noise
+
+    # Resample parameters
+    resample_interval: 1         # Seconds between resampling
+
+    # Initial pose estimation (optional)
+    # initial_pose_x: 0.0
+    # initial_pose_y: 0.0
+    # initial_pose_a: 0.0
+
+    # Logging and debugging
+    log_debug: false
+    log_info: true
+    log_warn: true
+    log_error: true
+
+    # Particle cloud
+    recovery_alpha_slow: 0.001    # Particle cloud size to trigger slow recovery
+    recovery_alpha_fast: 0.1       # Particle cloud size to trigger fast recovery

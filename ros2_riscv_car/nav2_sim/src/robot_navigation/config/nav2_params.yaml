@@ -1,41 +1,91 @@
-amcl:
-  ros__parameters:
-    use_sim_time: True
-    base_frame_id: "base_link"
-    odom_frame_id: "odom"
-    scan_topic: "scan"
-    min_particle_num: 500
-    max_particle_num: 2000
-    # Other AMCL parameters...
+# nav2_params.yaml
 
-controller_server:
-  ros__parameters:
-    use_sim_time: True
-    # Controller parameters...
+use_sim_time: true
 
 planner_server:
   ros__parameters:
-    use_sim_time: True
-    # Planner parameters...
+    expected_planner_frequency: 20.0
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_navfn_planner/NavfnPlanner"
 
-behavior_server:
+controller_server:
   ros__parameters:
-    use_sim_time: True
-    # Behavior parameters...
+    expected_controller_frequency: 20.0
+    controller_plugins: ["FollowPath"]
+    FollowPath:
+      plugin: "nav2_regulated_pure_pursuit_controller/RegulatedPurePursuitController"
+      lookahead_time: 0.5
+      max_lookahead_distance: 1.0
+      min_lookahead_distance: 0.4
 
 bt_navigator:
   ros__parameters:
-    use_sim_time: True
-    # BT Navigator parameters...
+    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
 
-lifecycle_manager:
+recoveries_server:
   ros__parameters:
-    use_sim_time: True
-    autostart: True
-    node_names:
-      - "controller_server"
-      - "planner_server"
-      - "behavior_server"
-      - "bt_navigator"
-      - "amcl"
-      - "map_server"
+    recovery_plugins: ["BackUp", "Spin", "Wait"]
+    BackUp:
+      plugin: "nav2_recoveries/BackUp"
+    Spin:
+      plugin: "nav2_recoveries/Spin"
+    Wait:
+      plugin: "nav2_recoveries/Wait"
+
+amcl:
+  ros__parameters:
+
+    use_sim_time: true  # Use simulation time provided by Gazebo
+
+    alpha1: 0.2 # Expected process noise in odometry’s rotation estimate from rotation.
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+    alpha5: 0.2
+
+    # Frame configuration
+    base_frame_id: "base_link"      # Frame ID for the robot base
+    beam_skip_distance: 0.5         # Ignore beams that most particles disagree with in Likelihood field model. Maximum distance to consider skipping for (m)
+    beam_skip_error_threshold: 0.9  # Percentage of beams after not matching map to force full update due to bad convergence.
+    beam_skip_threshold: 0.3        # Percentage of beams required to skip.
+
+    global_frame_id: "map"            # Frame ID for the map
+    lambda_short: 0.1                 # Exponential decay parameter for z_short part of model.
+    laser_likelihood_max_dist: 2.0    # Maximum distance to do obstacle inflation on map, for use in likelihood_field model.
+    laser_max_range: 100.0            # Maximum scan range to be considered, -1.0 will cause the laser’s reported maximum range to be used.
+    laser_min_range: -1.0             # Minimum scan range to be considered, -1.0 will cause the laser’s reported minimum range to be used.
+    laser_model_type: "likelihood_field"  # Which model to use, either beam, likelihood_field, or likelihood_field_prob. Same as likelihood_field but incorporates the beamskip feature, if enabled.
+    
+    set_initial_pose: false # Causes AMCL to set initial pose from the initial_pose* parameters instead of waiting for the initial_pose message.
+    initial_pose: {x: 0.0, y: 0.0, z: 0.0, yaw: 0.0}  # X, Y, Z, and yaw coordinates of initial pose (meters and radians) of robot base frame in global frame.
+    
+    max_beams: 60   # How many evenly-spaced beams in each scan to be used when updating the filter.
+    max_particles: 2000 # Maximum allowed number of particles.
+    min_particles: 500  # Minimum allowed number of particles.
+
+
+
+    odom_frame_id: "odom"          # Frame ID for odometry
+    pf_err: 0.05
+    pf_z: 0.99
+    recovery_alpha_fast: 0.0
+    recovery_alpha_slow: 0.0
+    resample_interval: 1
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    save_pose_rate: 0.5
+    sigma_hit: 0.2
+    tf_broadcast: true
+    transform_tolerance: 1.0
+    update_min_a: 0.2
+    update_min_d: 0.25
+    z_hit: 0.5
+    z_max: 0.05
+    z_rand: 0.5
+    z_short: 0.05
+    always_reset_initial_pose: false 
+
+    # Topics
+    scan_topic: scan          # Topic name for laser scans
+    map_topic: map
+    

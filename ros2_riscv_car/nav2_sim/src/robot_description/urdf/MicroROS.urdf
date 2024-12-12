@@ -88,10 +88,8 @@
     <origin
       xyz="0.0455 0.0675 -0.02125"
       rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="zq_Link" />
+    <parent link="base_link" />
+    <child link="zq_Link" />
     <axis xyz="0 -1 0" />
   </joint>
 
@@ -139,7 +137,7 @@
       rpy="0 0 0" />
     <parent link="base_link" />
     <child link="yq_Link" />
-    <axis xyz="0 1 0" />
+    <axis xyz="0 -1 0" />
   </joint>
 
   <link name="yh_Link">
@@ -176,14 +174,13 @@
     </collision>
   </link>
 
-  <joint
-    name="yh_Joint" type="continuous">
+  <joint name="yh_Joint" type="continuous">
     <origin
       xyz="-0.0495 -0.0675 -0.02125"
       rpy="0 0 0" />
     <parent link="base_link" />
     <child link="yh_Link" />
-    <axis xyz="0 1 0" />
+    <axis xyz="0 -1 0" />
   </joint>
 
   <link name="zh_Link">
@@ -258,7 +255,7 @@
       <!-- limits -->
       <max_wheel_torque>2.0</max_wheel_torque>
       <max_wheel_acceleration>1.0</max_wheel_acceleration>
-      <max_angular_velocity>5.0<max_velocity> 
+      <max_angular_velocity>5.0</max_angular_velocity> 
 
       <!-- output -->
       <publish_odom>true</publish_odom>
@@ -576,8 +573,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+        <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
       </material>
     </visual>
     <collision>
@@ -585,25 +581,17 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/jq2_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/jq2_Link.STL" />
       </geometry>
     </collision>
   </link>
 
 
-  <joint
-    name="jq2_Joint"
-    type="revolute">
-    <origin
-      xyz="0.016864 8.4892E-05 0.023959"
-      rpy="0 0 0" />
-    <parent
-      link="jq1_Link" />
-    <child
-      link="jq2_Link" />
-    <axis
-      xyz="0.0037845 -0.99999 0" />
+  <joint name="jq2_Joint" type="revolute">
+    <origin xyz="0.016864 8.4892E-05 0.023959" rpy="0 0 0" />
+    <parent link="jq1_Link" />
+    <child link="jq2_Link" />
+    <axis xyz="0.0037845 -0.99999 0" />
     <limit
       lower="-1.57"
       upper="1.57"

@@ -10,11 +10,12 @@
   <maintainer email="akana_kim@icloud.com">kunama</maintainer>
 
   <!-- License (optional, but recommended to specify) -->
-  <license>TODO: License declaration</license>
+  <license>Apache-2.0</license>
+
 
   <!-- Build Tool Dependency -->
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <exec_depend>robot_localization</exec_depend>
+  <!-- <exec_depend>robot_localization</exec_depend> -->
   <!-- Runtime Dependencies -->
   <exec_depend>robot_state_publisher</exec_depend>  <!-- For publishing robot state -->
   <exec_depend>joint_state_publisher</exec_depend>
