@@ -21,8 +21,7 @@ Desicription : to display robot and the simulation environment
 ![](pics/robot_displayr4.png)
 
 
-***
-
+## robot slam
 
 `ros2 launch robot_slam slam_mapping_launch.py`
 
