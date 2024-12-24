@@ -57,6 +57,15 @@ def generate_launch_description():
         parameters=[amcl_params_file, {"use_sim_time": use_sim_time}],
     )
 
+    # Create the Static Transform Publisher node for map -> odom
+    static_tf_map_to_odom = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_map_to_odom',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+    )
+
+
     # Create the Lifecycle Manager node
     nav_manager = Node(
         package="nav2_lifecycle_manager",
@@ -80,6 +89,7 @@ def generate_launch_description():
         map_file_arg,
         map_server_node,
         amcl_node,
+        static_tf_map_to_odom ,
         nav_manager,
         log_amcl_params_cmd
     ])

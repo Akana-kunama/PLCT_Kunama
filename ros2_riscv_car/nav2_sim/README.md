@@ -33,4 +33,21 @@ Desicription : to display robot and the simulation environment
 `ros2 launch robot_slam acml_launch.py`
  + able to load saved map 
 
-![](pics/robot_mapping_load_and_save.png)
+![](pics/robot_mapping_load_and_save2.png)
+
+
+## robot navigation
+
+`ros2 launch robot_navigation navigation_launch.py`
+
++ able to display saved map produced by `robot_slam slam_launch.py` and `robot_slam map_saving_launch.py`
+
++ able to adjust initial position and pose through rviz 
+
++ able to set 2D navigation goal through rviz
+
++ able to calculate a path to the goal and display
+
+![](pics/robot_navigation.png)
+
+![](pics/robot_navigation3.png)

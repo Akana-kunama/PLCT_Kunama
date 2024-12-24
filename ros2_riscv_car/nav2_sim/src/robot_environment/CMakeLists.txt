@@ -12,9 +12,8 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 
-# Install models and worlds
-install(DIRECTORY models/
-  DESTINATION share/${PROJECT_NAME}/models)
+# Install worlds
+
 
 install(DIRECTORY worlds/
   DESTINATION share/${PROJECT_NAME}/worlds)

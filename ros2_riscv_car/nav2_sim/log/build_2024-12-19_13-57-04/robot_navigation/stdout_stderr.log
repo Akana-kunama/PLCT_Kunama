@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/launch/navigation_launch.py
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/launch/test_launch.py
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/config/nav2_params.yaml
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/ament_index/resource_index/package_run_dependencies/robot_navigation
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/ament_index/resource_index/parent_prefix_path/robot_navigation
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/environment/path.sh
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/environment/path.dsv
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/local_setup.bash
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/local_setup.sh
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/local_setup.zsh
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/local_setup.dsv
+-- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.dsv
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/ament_index/resource_index/packages/robot_navigation
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig.cmake
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig-version.cmake
+-- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.xml

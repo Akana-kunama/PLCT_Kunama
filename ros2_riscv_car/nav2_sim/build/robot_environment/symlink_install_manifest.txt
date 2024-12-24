@@ -1,5 +1,3 @@
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/models/model.config
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/models/model.sdf
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/worlds/sim_world.world
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/launch/simulation_launch.py
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/ament_index/resource_index/package_run_dependencies/robot_environment

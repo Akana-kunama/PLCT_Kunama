@@ -1,0 +1,61 @@
+slam_toolbox:
+  ros__parameters:
+    
+    use_sim_time: true  # Use simulation time
+    
+    mode: "localization"     # Options: "mapping", "localization", etc.
+    
+    map_file_name: "/maps/saved_map.yaml"  # Name of the map file to save
+    
+    map_frame: "map"    # Frame ID for the map
+    odom_frame: "odom"  # Frame ID for odometry
+    base_frame: "base_link"  # Frame ID for the robot base
+    
+
+    map_start_at_dock: true
+
+    scan_topic: "/scan"  # Topic name for laser scans
+    max_laser_range: 10.0       # Maximum laser range in meters
+    min_laser_range: 0.1        # Minimum laser range in meters
+    angle_min: -1.5708           # -90 degrees in radians
+    angle_max: 1.5708            # 90 degrees in radians
+    samples: 720                 # Number of laser scan samples
+    resolution: 1.0              # Laser scan resolution
+
+
+    # Mapping Mode Parameters
+    resolution: 0.05  # Meters per cell
+    publish_map: true  # Publish the map to the /map topic
+    publish_pose: true  # Publish the robot's pose
+    save_map_timeout: 0.0  # Save the map immediately when requested
+    map_update_interval: 1.0  # Seconds between map updates
+
+    # Particle Filter Parameters
+    min_num_particles: 500
+    max_num_particles: 2000
+    update_interval: 1.0  # Seconds between particle filter updates
+
+    # Laser Scan Parameters
+    max_laser_range: 10.0  # Maximum laser range in meters
+    min_laser_range: 0.1   # Minimum laser range in meters
+    angle_min: -1.5708      # -90 degrees in radians
+    angle_max: 1.5708       # 90 degrees in radians
+    samples: 720            # Number of laser scan samples
+    resolution: 1.0         # Laser scan resolution
+
+    # Occupancy Grid Parameters
+    occupancy_threshold: 0.5
+    free_threshold: 0.3
+
+    # Pose Estimation Parameters
+    alpha1: 0.2
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+    alpha5: 0.2
+
+    # Logging and Debugging
+    log_debug: false
+    log_info: true
+    log_warn: true
+    log_error: true

@@ -90,7 +90,7 @@
       rpy="0 0 0" />
     <parent link="base_link" />
     <child link="zq_Link" />
-    <axis xyz="0 -1 0" />
+    <axis xyz="0 1 0" />
   </joint>
 
 
@@ -137,7 +137,7 @@
       rpy="0 0 0" />
     <parent link="base_link" />
     <child link="yq_Link" />
-    <axis xyz="0 -1 0" />
+    <axis xyz="0 1 0" />
   </joint>
 
   <link name="yh_Link">
@@ -180,7 +180,7 @@
       rpy="0 0 0" />
     <parent link="base_link" />
     <child link="yh_Link" />
-    <axis xyz="0 -1 0" />
+    <axis xyz="0 1 0" />
   </joint>
 
   <link name="zh_Link">
@@ -226,7 +226,7 @@
       rpy="0 0 0" />
     <parent link="base_link" />
     <child link="zh_Link" />
-    <axis xyz="0 -1 0" />
+    <axis xyz="0 1 0" />
   </joint>
 
 

@@ -15,19 +15,19 @@ slam_toolbox:
 
     # Laser Scan Parameters
     scan_topic: "/scan"        # Topic name for laser scans
-    max_laser_range: 10.0      # Maximum laser range in meters
-    min_laser_range: 0.1       # Minimum laser range in meters
+    max_laser_range: 3.5      # Maximum laser range in meters
+    min_laser_range: 0.15       # Minimum laser range in meters
     angle_min: -1.5708         # -90 degrees in radians
     angle_max: 1.5708          # 90 degrees in radians
     samples: 720               # Number of laser scan samples
-    resolution: 1.0            # Laser scan resolution
+    resolution: 0.1            # Laser scan resolution
 
     # Mapping Mode Parameters
     map_resolution: 0.01        # Meters per cell (renamed to avoid duplication)
     publish_map: true           # Publish the map to the /map topic
     publish_pose: true          # Publish the robot's pose
     save_map_timeout: 0.0       # Save the map immediately when requested
-    map_update_interval: 1.0    # Seconds between map updates
+    map_update_interval: 0.1   # Seconds between map updates
 
     # Occupancy Grid Parameters
     occupancy_threshold: 0.65
@@ -36,7 +36,7 @@ slam_toolbox:
     # Particle Filter Parameters
     min_num_particles: 500
     max_num_particles: 2000
-    update_interval: 1.0  # Seconds between particle filter updates
+    update_interval: 0.5  # Seconds between particle filter updates
 
     # Pose Estimation Parameters
     alpha1: 0.2

@@ -310,9 +310,6 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "models/" "DESTINATION" "share/robot_environment/models")
-ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_environment" DIRECTORY "models/" "DESTINATION" "share/robot_environment/models")
-
 # install(DIRECTORY "worlds/" "DESTINATION" "share/robot_environment/worlds")
 ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_environment" DIRECTORY "worlds/" "DESTINATION" "share/robot_environment/worlds")
 

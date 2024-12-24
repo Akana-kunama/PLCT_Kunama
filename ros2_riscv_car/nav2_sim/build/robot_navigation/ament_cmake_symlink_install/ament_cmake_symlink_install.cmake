@@ -316,6 +316,9 @@ ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/rob
 # install(DIRECTORY "config/" "DESTINATION" "share/robot_navigation/config")
 ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_navigation" DIRECTORY "config/" "DESTINATION" "share/robot_navigation/config")
 
+# install(DIRECTORY "params/" "DESTINATION" "share/robot_navigation/params")
+ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_navigation" DIRECTORY "params/" "DESTINATION" "share/robot_navigation/params")
+
 # install(FILES "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_navigation" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_navigation" FILES "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_navigation" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

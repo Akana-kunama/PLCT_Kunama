@@ -13,6 +13,7 @@
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/launch/robot_display_launch.py
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/rviz/urdf_config.rviz
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/config/ekf.yaml
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/config/ekf_new.yaml
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
 /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/environment/ament_prefix_path.sh

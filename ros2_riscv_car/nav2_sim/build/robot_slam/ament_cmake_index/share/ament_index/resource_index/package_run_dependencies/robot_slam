@@ -1,0 +1,1 @@
+rclcpp;nav2_map_server;nav2_amcl;nav2_lifecycle_manager;slam_toolbox;ros-humble-slam-toolbox;ros-humble-nav2-map-server;ros-humble-nav2-amcl;ros-humble-nav2-lifecycle-manager;ament_lint_auto;ament_lint_common
