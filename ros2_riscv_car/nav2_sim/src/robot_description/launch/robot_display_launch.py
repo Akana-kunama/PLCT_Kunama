@@ -20,7 +20,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
     model_path = LaunchConfiguration('model')
     rviz_config_path = LaunchConfiguration('rvizconfig')
-
+    world_file = LaunchConfiguration('world')
 
 
     use_sim_time_declare = DeclareLaunchArgument(
@@ -51,6 +51,15 @@ def generate_launch_description():
         description='Absolute path to RViz config file'
     )
 
+    world_file_declare = DeclareLaunchArgument(
+        'world',
+        default_value=os.path.join(
+            get_package_share_directory('robot_environment'),
+            'worlds',
+            'sim_world.world'
+        ),
+        description='Absolute path to the world file to load'
+    )
     # -------------------------
     # 2. Paths and File Configurations
     # -------------------------
@@ -61,7 +70,7 @@ def generate_launch_description():
 
     # Define file paths
     # world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
-    world_file = os.path.join(robot_environment_pkg, 'worlds', 'ROS-Academy.world')
+    # world_file = os.path.join(robot_environment_pkg, 'worlds', 'ROS-Academy.world')
     urdf_file_path = os.path.join(robot_description_pkg, 'urdf', 'MicroROS.urdf')
     default_rviz_config_path = os.path.join(robot_description_pkg, 'rviz', 'urdf_config.rviz')
 
@@ -149,7 +158,7 @@ def generate_launch_description():
         use_sim_time_declare,
         model_path_declare,
         rviz_config_path_declare,
-
+        world_file_declare,
         # Launch Gazebo
         gazebo_launch,
 
