@@ -60,7 +60,8 @@ def generate_launch_description():
     robot_environment_pkg = get_package_share_directory('robot_environment')
 
     # Define file paths
-    world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
+    # world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
+    world_file = os.path.join(robot_environment_pkg, 'worlds', 'ROS-Academy.world')
     urdf_file_path = os.path.join(robot_description_pkg, 'urdf', 'MicroROS.urdf')
     default_rviz_config_path = os.path.join(robot_description_pkg, 'rviz', 'urdf_config.rviz')
 

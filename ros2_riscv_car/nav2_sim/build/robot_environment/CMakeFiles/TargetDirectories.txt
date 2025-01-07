@@ -1,9 +1,0 @@
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/uninstall.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/robot_environment_uninstall.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/test.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/edit_cache.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/rebuild_cache.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/list_install_components.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/install.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/install/local.dir
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment/CMakeFiles/install/strip.dir

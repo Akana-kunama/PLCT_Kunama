@@ -59,6 +59,7 @@ def generate_launch_description():
 
     # Define file paths
     world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
+    # world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
     urdf_file_path = os.path.join(robot_description_pkg, 'urdf', 'MicroROS.urdf')
     default_rviz_config_path = os.path.join(robot_description_pkg, 'rviz', 'urdf_config.rviz')
     ekf_config_path = os.path.join(robot_description_pkg, 'config', 'ekf.yaml')
@@ -72,6 +73,7 @@ def generate_launch_description():
     package_share_directory = get_package_share_directory('robot_description')
     robot_environment_pkg = get_package_share_directory('robot_environment')
     world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
+    # world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
 
 
     # Define the path to the URDF file
