@@ -16,9 +16,9 @@ Desicription : to display robot and the simulation environment
 + able to scan the environment with radar
 
 
-![](pics/robot_display3.png.png)
+![](../pics/robot_display3.png.png)
 
-![](pics/robot_displayr4.png)
+![](../pics/robot_displayr4.png)
 
 
 ## robot slam
@@ -33,7 +33,7 @@ Desicription : to display robot and the simulation environment
 `ros2 launch robot_slam acml_launch.py`
  + able to load saved map 
 
-![](pics/robot_mapping_load_and_save2.png)
+![](../pics/robot_mapping_load_and_save2.png)
 
 
 ## robot navigation
@@ -48,9 +48,9 @@ Desicription : to display robot and the simulation environment
 
 + able to calculate a path to the goal and display
 
-![](pics/robot_navigation.png)
+![](../pics/robot_navigation.png)
 
-![](pics/robot_navigation3.png)
+![](../pics/robot_navigation3.png)
 
 
 ## Reference
