@@ -70,3 +70,5 @@ AL lib: (WW) alc_initconfig: Failed to initialize backend "jack"
 [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [ground_plane::link::visual].
 ```
 
+但并无 `zink_dri.so ` 相关报错提示。
+
