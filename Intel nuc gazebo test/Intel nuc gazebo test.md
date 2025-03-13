@@ -80,18 +80,44 @@ AL lib: (WW) alc_initconfig: Failed to initialize backend "jack"
 
 下载 `nav2_sim` 的源码 `src` ，通过 `colcon` 进行编译，执行：
 
-```bash
-ros2 launch robot_description robot_display.launch
-```
-
-![ ](./pics/nav2_sim_test.png)
-
-能够实现将模型发布到 `rviz2` 进行显示，`gazebo` 启动失败，日志报错：
+**建图测试**
 
 ```bash
-[spawn_entity.py-4] [INFO] [1741762280.965070734] [spawn_entity]: Calling service /spawn_entity
-[spawn_entity.py-4] [INFO] [1741762281.552225348] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [micro4.0]
-[INFO] [spawn_entity.py-4]: process has finished cleanly [pid 28415]
-[ERROR] [gazebo-1]: process has died [pid 28409, exit code 255, cmd 'gazebo --verbose -s libgazebo_ros_init.so -s libgazebo_ros_factory.so /home/openeuler/Desktop/nav_sim/install/robot_environment/share/robot_environment/worlds/sim_world.world'].
+ros2 launch robot_slam slam_mapping.launch
 ```
 
+![mapping_test](./pics/mapping_test.jpg)
+
+![mapping_test2](./pics/mapping_test2.jpg)
+
+可以实现基本建图功能，能够保存地图文件
+
+**导航测试**
+
+```bash
+ros2 launch robot_navigation navigation_launch.py
+```
+
++ rqt_grah : 
+
+![5a933dd2ca04115e9f733d2fad2f9794](./pics/5a933dd2ca04115e9f733d2fad2f9794.jpg)
+
++ node list
+
+![c0076d47d87a5bb6b0b4528a0569aa7d](./pics/c0076d47d87a5bb6b0b4528a0569aa7d.jpg)
+
+无法启动 `/global_map ` 相关节点，无法发布相关话题，暂时未能正常实现导航功能
+
+> Unbuntu下运行：
+>
+> ```bash
+> ros2 launch robot_navigation navigation_launch.py
+> ```
+>
+> + rqt_grah : 
+>
+> ![ubunturqt](./pics/ubunturqt.png)
+>
+> + node list
+>
+> ![ubuntunode](./pics/ubuntunode.png)
