@@ -98,6 +98,8 @@ ros2 launch robot_slam slam_mapping.launch
 ros2 launch robot_navigation navigation_launch.py
 ```
 
+![nav_test](./pics/nav_test.jpg)
+
 + rqt_grah : 
 
 ![5a933dd2ca04115e9f733d2fad2f9794](./pics/5a933dd2ca04115e9f733d2fad2f9794.jpg)
