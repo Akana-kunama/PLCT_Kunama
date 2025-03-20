@@ -123,3 +123,89 @@ ros2 launch robot_navigation navigation_launch.py
 > + node list
 >
 > ![ubuntunode](./pics/ubuntunode.png)
+
+
+
+## 修复显示问题
+
+打开终端输入：
+
+```bash
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_SCREEN_SCALE_FACTORS=[1.0]
+```
+
+![screen_solved](./pics/screen_solved.jpg)
+
+
+
+## nav2_sim 运行
+
+拆解运行发现，openEuler 下无法支持同一个launch 文件下启动 `rviz2` ，`gazebo` , `navigation2`  ，对仿真包作修改：https://github.com/Akana-kunama/nav2_sim
+
+> 编译需要先编译 `custom_command` 包并运行 `source ./install/setup.bash` 后再对其他包编译，并  `source ./install/setup.bash` 
+
+先运行
+
+```bash
+ros2 launch robot_description robot_display.py
+```
+
+等到稳定后运行：
+
+```bash
+ros2 launch robot_navigation navigation_launch.py
+```
+
+> 静态地图需要手动将Fixed Frame设置为 map 后，通过 lifecycle 重新设置 /map_server 刷新，但未必能够正确显示
+
+![openeuler_gazebo_nav2_sim0](./pics/openeuler_gazebo_nav2_sim0.jpg)
+
+![openeuler_gazebo_nav2_sim1](./pics/openeuler_gazebo_nav2_sim1.jpg)
+
+能够实现目标点的缓慢导航，但日志中仍存在以下问题， `gazebo` 缺乏相关插件，`controller_server` 频率受限制（相对于Ubuntu 22.04 AMD Ryzen 5 4600H with Radeon Graphics Memory: 16G)：
+
+```bash
+[gazebo-1] [Err] [Scene.cc:227] Service call[/shadow_caster_material_name] timed out                                                                                                                 
+[gazebo-1] [Err] [Scene.cc:249] Service call[/shadow_caster_render_back_faces] timed out                                                                                                             
+[gazebo-1] [Wrn] [Scene.cc:463] Ignition transport [/scene_info] service call failed, falling back to gazebo transport [scene_info] request.                                                         
+[gazebo-1] [Wrn] [MainWindow.cc:373] Ignition transport [/scene_info] service call failed, falling back to gazebo transport [scene_info] request.                                                    
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [ground_plane::link::visual].                                       
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_0::Wall_0_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_1::Wall_1_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_2::Wall_2_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_3::Wall_3_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_4::Wall_4_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_5::Wall_5_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_6::Wall_6_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_7::Wall_7_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_8::Wall_8_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_9::Wall_9_Visual].                        
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_10::Wall_10_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_14::Wall_14_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_15::Wall_15_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_16::Wall_16_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_18::Wall_18_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_19::Wall_19_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_20::Wall_20_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_21::Wall_21_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_22::Wall_22_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_24::Wall_24_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_25::Wall_25_Visual].                      
+[gazebo-1] [Err] [Visual.cc:385] Service name [/shininess] not advertised, not attempting to load shininess for visual with name [simulation_map1108::Wall_26::Wall_26_Visual].                      
+[rviz2-5] [INFO] [1742437762.203676053] [rviz2]: Trying to create a map of size 394 x 161 using 1 swatches                                                               
+[rviz2-5] [ERROR] [1742437762.349908209] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result :   
+```
+
+```bash
+[controller_server-4] [WARN] [1742438569.874837346] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438570.123162077] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438571.720557968] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438571.919313084] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438572.187303793] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438572.225515950] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438573.933331350] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438574.530536275] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-4] [WARN] [1742438575.625951006] [controller_server]: Control loop missed its desired rate of 20.0000H
+```
+
