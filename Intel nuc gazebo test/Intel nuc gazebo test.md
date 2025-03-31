@@ -163,7 +163,7 @@ ros2 launch robot_navigation navigation_launch.py
 
 ![openeuler_gazebo_nav2_sim1](./pics/openeuler_gazebo_nav2_sim1.jpg)
 
-能够实现目标点的缓慢导航，但日志中仍存在以下问题， `gazebo` 缺乏相关插件，`controller_server` 频率受限制（相对于Ubuntu 22.04 AMD Ryzen 5 4600H with Radeon Graphics Memory: 16G)：
+能够实现目标点的缓慢导航，但日志中仍存在以下问题， `gazebo` 缺乏相关插件，`controller_server` 频率受限制：
 
 ```bash
 [gazebo-1] [Err] [Scene.cc:227] Service call[/shadow_caster_material_name] timed out                                                                                                                 
