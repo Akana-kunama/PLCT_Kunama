@@ -177,7 +177,11 @@ uv run playground/open_duck_mini_v2/runner.py
 
 训练结束后，可以得到 `ONNX.onnx` 模型文件，可以运行脚本在 `mujoco` 上进行推理：
 
-<video src="./pics/mujoco_inference.mp4"></video>
+
+
+https://github.com/user-attachments/assets/9f05ca47-da0b-4cc9-b303-ee233c66e9e2
+
+
 
 
 
