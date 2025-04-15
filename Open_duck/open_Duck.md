@@ -171,9 +171,9 @@ https://github.com/apirrone/Open_Duck_Playground
 uv run playground/open_duck_mini_v2/runner.py 
 ```
 
-![Screenshot from 2025-04-07 22-52-33](./pics/Screenshot from 2025-04-07 22-52-33.png)
+![train0](./pics/train0.png)
 
-![Screenshot from 2025-04-08 16-05-00](./pics/Screenshot from 2025-04-08 16-05-00.png)
+![train1](./pics/train1.png)
 
 训练结束后，可以得到 `ONNX.onnx` 模型文件，可以运行脚本在 `mujoco` 上进行推理：
 
