@@ -21,6 +21,7 @@
 + Navigation_Sim：机器人导航仿真
   + nav_sim ： navigation2 导航仿真
   + openEuler_gazebo_nav2：openEuler上的 navigaton2仿真
+  + Intel nuc gazebo navgation2 test：物理openEuler gazebo + nav2 测试
 
 
 
