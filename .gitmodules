@@ -1,0 +1,3 @@
+[submodule "Robots/Unitree_bots/unitree_rl_gym_ak"]
+	path = Robots/Unitree_bots/unitree_rl_gym_ak
+	url = https://github.com/Akana-kunama/unitree_rl_gym_ak
